@@ -1,0 +1,25 @@
+.HomePage{
+  display: flex;
+  flex-direction: column;
+}
+.gif {
+  width: 100%;
+  height: 550px;
+}
+.sectionTwoTitle {
+  text-align: center;
+  color: rgb(77, 57, 233);
+}
+
+.partBox {
+  display: flex;
+  align-items: center;
+}
+.hesabdarymali {
+  height: 100px;
+}
+.paraghrafPart {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 20px;
+}

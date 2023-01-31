@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #040449;
+  padding: 5px;
+}
+.nav {
+}
+.items {
+  display: flex;
+  align-items: center;
+}
+.item {
+  margin-left: 15px;
+  padding: 5px;
+}
+.link {
+  font-size: 1.3rem;
+  padding: 5px;
+}
+.link:hover {
+  color: rgb(68, 138, 245);
+  border-bottom: 1px solid rgb(68, 138, 245);
+}
+.demoLink {
+  padding: 8px;
+  font-size: 1.1rem;
+}
+.demoLink:hover {
+  background-color: rgb(68, 138, 245);
+  padding: 8px;
+  border-radius: 2px;
+}

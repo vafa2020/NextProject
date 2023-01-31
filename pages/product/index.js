@@ -7,7 +7,7 @@ const Product = () => {
   ];
   return (
     <div>
-      <h2>product </h2>
+      <h2>product</h2>
       <nav>
         <ul>
           {Users.map((user) => (

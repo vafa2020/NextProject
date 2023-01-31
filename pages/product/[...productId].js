@@ -6,8 +6,7 @@ const ProductID = () => {
   console.log(productId);
   return (
     <div>
-      <h2>Product- </h2>
-      
+      <h2>Product</h2>
     </div>
   );
 };
