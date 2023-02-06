@@ -1,0 +1,43 @@
+.button {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.wrapper {
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.button {
+  padding: 20px 30px;
+  border: none;
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.button:focus {
+  background-color: rgb(77, 57, 233);
+  color: white;
+}
+.image {
+  height: 350px;
+  width: 350px;
+}
+.paraghraph {
+  line-height: 30px;
+  text-align: justify;
+  font-size: 1.1rem;
+}
+.content {
+  padding: 0 20px;
+}
+.items {
+  margin-top: 50px;
+}
+.item {
+  font-size: 1.1rem;
+  text-align: justify;
+  margin: 10px 0;
+  font-weight: bold;
+  list-style: circle;
+}

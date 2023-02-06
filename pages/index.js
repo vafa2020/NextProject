@@ -5,6 +5,8 @@ import { Gif } from "../component/img/image";
 import Product from "../component/product/Product";
 import dataProduct from "../data/DataProduct";
 import Title from "../component/title/Title";
+import DataTab from "../data/DataTab";
+import Tab from "../component/tab/Tab";
 
 const HomePage = () => {
   return (
@@ -18,6 +20,7 @@ const HomePage = () => {
         <div className={classes.wrapperProduct}>
           {dataProduct.map((product) => (
             <Product
+              key={product.id}
               title={product.Title}
               src={product.Src}
               paragraph={product.Paragraph}
@@ -26,6 +29,7 @@ const HomePage = () => {
           ))}
         </div>
         <Title title="خدمات امین سیستم آرمان" />
+        <Tab data={DataTab} />
       </div>
     </div>
   );
