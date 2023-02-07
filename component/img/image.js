@@ -12,6 +12,15 @@ import education from "../../public/image/education.jpg";
 import esteghrar from "../../public/image/esteghrar.jpg";
 import support from "../../public/image/support.jpg";
 import qustions from "../../public/image/qustions.jpg";
+// footre-menu
+import afata from "../../public/image/afata.png";
+import asnaf from "../../public/image/asnaf.png";
+import ecunion from "../../public/image/ecunion.png";
+import enamad from "../../public/image/enamad.png";
+import ershad from "../../public/image/ershad.png";
+import shora from "../../public/image/shora.png";
+// footre-menu
+
 export {
   logo,
   amvalVaDaraeeSabet,
@@ -27,4 +36,10 @@ export {
   esteghrar,
   support,
   qustions,
+  afata,
+  asnaf,
+  ecunion,
+  enamad,
+  ershad,
+  shora,
 };
