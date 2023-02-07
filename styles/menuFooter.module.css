@@ -1,0 +1,31 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.itemsImages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.image {
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item {
+  color: #fff;
+  padding: 7px 0;
+  cursor: pointer;
+}

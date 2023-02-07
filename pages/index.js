@@ -9,6 +9,7 @@ import DataTab from "../data/DataTab";
 import Tab from "../component/tab/Tab";
 import Accordion from "../component/accordion/Accordion";
 import dataAccordion from "../data/DataAccordion";
+import Footer from "../component/footer/Footer";
 
 const HomePage = () => {
   return (
@@ -35,6 +36,7 @@ const HomePage = () => {
         <Title title="سوالات متداول" />
         <Accordion data={dataAccordion} />
       </div>
+      <Footer />
     </div>
   );
 };
