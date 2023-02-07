@@ -8,3 +8,27 @@
   height: 500px;
   width: 500px;
 }
+.boxTitle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.accordion {
+  margin: 20px 0;
+}
+.boxIcon {
+  margin-left: 20px;
+}
+.icon {
+  transition: 0.5s;
+}
+.content {
+  padding: 10px;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 30px;
+  background-color: #fdfdfd;
+}
