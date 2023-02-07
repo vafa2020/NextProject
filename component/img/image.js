@@ -11,7 +11,7 @@ import Gif from "../../public/image/video.gif";
 import education from "../../public/image/education.jpg";
 import esteghrar from "../../public/image/esteghrar.jpg";
 import support from "../../public/image/support.jpg";
-
+import qustions from "../../public/image/qustions.jpg";
 export {
   logo,
   amvalVaDaraeeSabet,
@@ -26,4 +26,5 @@ export {
   education,
   esteghrar,
   support,
+  qustions,
 };

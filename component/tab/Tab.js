@@ -9,7 +9,7 @@ const Tab = ({ data }) => {
       {data.map((item) => (
         <button
           className={classes.button}
-          active={active === item.Title ? true : false}
+          active={active === item.Title ? "true" : "false"}
           onClick={() => setActive(item.Title)}
           key={item.id}
         >
@@ -19,15 +19,21 @@ const Tab = ({ data }) => {
       {data.map(
         (item) =>
           item.Title === active && (
-            <div className={classes.wrapper}>
+            <div key={item.id} className={classes.wrapper}>
               <div className={classes.boxImage}>
-                <Image className={classes.image} src={item.Src} alt={item.Alt} />
+                <Image
+                  className={classes.image}
+                  src={item.Src}
+                  alt={item.Alt}
+                />
               </div>
               <div className={classes.content}>
                 <p className={classes.paraghraph}>{item.Praghraph}</p>
                 <ul className={classes.items}>
                   {item.List.map((item) => (
-                    <li className={classes.item} key={item.id}>{item.content}</li>
+                    <li className={classes.item} key={item.id}>
+                      {item.content}
+                    </li>
                   ))}
                 </ul>
               </div>

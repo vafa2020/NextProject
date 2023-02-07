@@ -7,6 +7,8 @@ import dataProduct from "../data/DataProduct";
 import Title from "../component/title/Title";
 import DataTab from "../data/DataTab";
 import Tab from "../component/tab/Tab";
+import Accordion from "../component/accordion/Accordion";
+import dataAccordion from "../data/DataAccordion";
 
 const HomePage = () => {
   return (
@@ -30,6 +32,8 @@ const HomePage = () => {
         </div>
         <Title title="خدمات امین سیستم آرمان" />
         <Tab data={DataTab} />
+        <Title title="سوالات متداول" />
+        <Accordion data={dataAccordion} />
       </div>
     </div>
   );
