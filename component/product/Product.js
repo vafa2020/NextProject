@@ -5,7 +5,7 @@ const Product = ({ title, src, paragraph, alt }) => {
   return (
     <div className={classes.partBox}>
       <span className={classes.gifBox}>
-        <Image src={src} className={classes.image} alt={alt} />
+        <Image src={src} className={classes.image} alt="logo product"/>
       </span>
       <div className={classes.boxPart}>
         <h2 className={classes.titlePart}>{title}</h2>

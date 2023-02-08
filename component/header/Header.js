@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className={classes.header}>
       <div className={classes.logo}>
-        <Image src={logo} alt="logo" width={60} height={60} />
+        <Image src={logo} width={60} height={60} alt="logo project" />
       </div>
       <nav className={classes.nav}>
         <ul className={classes.items}>
@@ -17,7 +17,7 @@ const Header = () => {
             </Link>
           </li>
           <li className={classes.item}>
-            <Link className={classes.link} href="softWare">
+            <Link className={classes.link} href="software">
               نرم افزار های پیش نیاز
             </Link>
           </li>
@@ -54,7 +54,9 @@ const Header = () => {
         </ul>
       </nav>
       <div className={classes.demoBox}>
-        <Link className={classes.demoLink}href="demo">فرم درخواست دمو</Link>
+        <Link className={classes.demoLink} href="demo">
+          فرم درخواست دمو
+        </Link>
       </div>
     </div>
   );

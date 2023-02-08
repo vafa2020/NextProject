@@ -24,7 +24,7 @@ const Tab = ({ data }) => {
                 <Image
                   className={classes.image}
                   src={item.Src}
-                  alt={item.Alt}
+                 
                 />
               </div>
               <div className={classes.content}>

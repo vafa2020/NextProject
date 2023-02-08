@@ -1,4 +1,3 @@
-import Header from "../component/header/Header";
 import classes from "../styles/home.module.css";
 import Image from "next/image";
 import { Gif } from "../component/img/image";
@@ -9,35 +8,38 @@ import DataTab from "../data/DataTab";
 import Tab from "../component/tab/Tab";
 import Accordion from "../component/accordion/Accordion";
 import dataAccordion from "../data/DataAccordion";
-import Footer from "../component/footer/Footer";
+import Layout from "../layout";
 
 const HomePage = () => {
   return (
-    <div className={classes.HomePage}>
-      <Header />
-      <div className={classes.sectionOne}>
-        <Image src={Gif} className={classes.gif} alt="logo" />
-      </div>
-      <div className={classes.sectionTwo}>
-        <Title title="محصولات نرم افزاری" />
-        <div className={classes.wrapperProduct}>
-          {dataProduct.map((product) => (
-            <Product
-              key={product.id}
-              title={product.Title}
-              src={product.Src}
-              paragraph={product.Paragraph}
-              alt={product.Alt}
-            />
-          ))}
+    <Layout>
+      <div className={classes.HomePage}>
+        <div className={classes.sectionOne}>
+          <Image
+            src={Gif}
+            className={classes.gif}
+            alt="Picture of the author"
+          />
         </div>
-        <Title title="خدمات امین سیستم آرمان" />
-        <Tab data={DataTab} />
-        <Title title="سوالات متداول" />
-        <Accordion data={dataAccordion} />
+        <div className={classes.sectionTwo}>
+          <Title title="محصولات نرم افزاری" />
+          <div className={classes.wrapperProduct}>
+            {dataProduct.map((product) => (
+              <Product
+                key={product.id}
+                title={product.Title}
+                src={product.Src}
+                paragraph={product.Paragraph}
+              />
+            ))}
+          </div>
+          <Title title="خدمات امین سیستم آرمان" />
+          <Tab data={DataTab} />
+          <Title title="سوالات متداول" />
+          <Accordion data={dataAccordion} />
+        </div>
       </div>
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 export default HomePage;

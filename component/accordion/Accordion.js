@@ -9,14 +9,21 @@ const Accordion = ({ data }) => {
     <div className={classes.wrapper}>
       <div>
         {data.map((item) => (
-          <div className={classes.accordion}>
-            <div className={classes.boxTitle}
+          <div key={item.id} className={classes.accordion}>
+            <div
+              className={classes.boxTitle}
               onClick={() => {
                 item.status = !item.status;
                 setIsActive(!isActive);
               }}
             >
-              <span className={classes.boxIcon}>{isActive & item.status ? <SlArrowUp className={classes.icon} /> : <SlArrowDown />}</span>
+              <span className={classes.boxIcon}>
+                {isActive & item.status ? (
+                  <SlArrowUp className={classes.icon} />
+                ) : (
+                  <SlArrowDown />
+                )}
+              </span>
               <h2>{item.title}</h2>
             </div>
             {isActive & item.status ? (
@@ -28,7 +35,11 @@ const Accordion = ({ data }) => {
         ))}
       </div>
       <div className={classes.boxImage}>
-        <Image className={classes.image} src={qustions} />
+        <Image
+          className={classes.image}
+          src={qustions}
+          alt="image question repeat"
+        />
       </div>
     </div>
   );
