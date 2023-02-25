@@ -92,8 +92,16 @@ const SoftWare = () => {
       source: NetHosting,
       url: "https://amisa.co/wp-content/uploads/2021/07/dotnet-hosting-3.1.2-win.exe",
     },
-    { title: "درایور دیسکت بیمه", source: SendList, url: "" },
-    { title: "SQL Server Native Client", source: NativeClient, url: "" },
+    {
+      title: "درایور دیسکت بیمه",
+      source: SendList,
+      url: "https://amisa.co//wp-content/uploads/2021/download/vfpoledb.exe",
+    },
+    {
+      title: "SQL Server Native Client",
+      source: NativeClient,
+      url: "https://amisa.co//wp-content/uploads/2021/download/SQL-Native-Client.zip",
+    },
   ]);
   return (
     <Layout>
